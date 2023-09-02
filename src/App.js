@@ -1,3 +1,4 @@
+import Home from "./components/Home";
 import Navigation from "./components/Navigation";
 
 const App = () => {
@@ -5,6 +6,7 @@ const App = () => {
   return (
     <>
       <Navigation />
+      <Home/>
     </>
   );
 }
