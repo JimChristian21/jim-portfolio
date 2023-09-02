@@ -9,9 +9,37 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #03001C;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.color-1 {
+
+  color: #03001C;
 }
+
+.border-color-1 {
+
+  border-color: #03001C;
+}
+
+.color-3 {
+
+  color: #5B8FB9;
+}
+
+.border-color-3 {
+
+  border-color: #5B8FB9;
+}
+
+.color-4 {
+
+  color: #B6EADA;
+}
+
+.border-color-4 {
+
+  border-color: #B6EADA;
+}
+
+
