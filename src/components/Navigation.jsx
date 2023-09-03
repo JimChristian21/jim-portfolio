@@ -2,7 +2,7 @@ import React from "react";
 
 const Navigation = () => {
 
-    const classes = 'mx-5 p-2 color-3 border-b-2 border-color-3 hover:bg-slate-700 hover:rounded-t-md font-medium';
+    const classes = 'mx-5 p-2 color-3 border-b-2 border-color-3 hover:bg-slate-700 rounded-t-md font-medium transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-500';
 
     return (
         <div className="w-full h-14 flex justify-center items-center text-2xl mt-5">
