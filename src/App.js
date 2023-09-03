@@ -1,5 +1,6 @@
 import Home from "./components/Home";
 import Navigation from "./components/Navigation";
+import Projects from "./components/Projects";
 
 const App = () => {
 
@@ -7,6 +8,7 @@ const App = () => {
     <>
       <Navigation />
       <Home/>
+      <Projects />
     </>
   );
 }
