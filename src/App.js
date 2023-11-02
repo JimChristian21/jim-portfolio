@@ -1,3 +1,4 @@
+import Carousel from "./components/Carousel";
 import Home from "./components/Home";
 import Navigation from "./components/Navigation";
 import Projects from "./components/Projects";

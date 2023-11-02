@@ -16,7 +16,7 @@ const Home = () => {
                     <p className="text-white text-xl md:text-xl lg:text-3xl">
                         Software Engineer
                     </p>
-                    <p className="text-sm text-white mt-3">
+                    <p className="text-xl text-white mt-3">
                         I build things for the web that help businesses achieve its goal. <br /> 
                         Create and build solutions that will satisfy your needs.  <br /> 
                         Provided solutions and applications are well planned and analyzed.
