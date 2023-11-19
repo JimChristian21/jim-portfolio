@@ -6,7 +6,7 @@ const Projects = () => {
     
     return (
         <div id='Projects' className='w-full text-black my-16 min-h-full'>
-            <div className='text-white text-7xl  color-3 font-semibold ml-20'>
+            <div className='text-white text-3xl text-center md:text-7xl  color-3 font-semibold md:ml-20'>
                 Projects
             </div>
             <Carousel />

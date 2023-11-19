@@ -14,9 +14,9 @@ const Carousel = () => {
     const currentRef = useRef(null);
     const nextRef = useRef(null);
 
-    const prevInitialClass = 'w-full absolute opacity-50 -z-10 scale-90  top-0 left-0 flex md:flex-col md:w-1/2 bg-teal-400 h-full p-10 mx-auto';
-    const currentInitialClass = 'w-full flex md:flex-col md:w-1/2 bg-teal-400 p-10 mx-auto';
-    const nextInitialClass = 'w-full absolute opacity-50 -z-10 scale-90  top-0 right-0 flex md:flex-col md:w-1/2 bg-teal-400 h-full p-10 mx-auto';
+    const prevInitialClass = 'w-full absolute opacity-50 -z-10 scale-[90%]  top-0 left-0 flex flex-col md:w-1/2 bg-teal-400 h-full p-10 mx-auto';
+    const currentInitialClass = 'w-full flex flex-col md:w-1/2 bg-teal-400 p-10 mx-auto';
+    const nextInitialClass = 'w-full absolute opacity-50 -z-10 scale-[90%]  top-0 right-0 flex flex-col md:w-1/2 bg-teal-400 h-full p-10 mx-auto';
 
     useEffect(() => {
 
@@ -76,11 +76,11 @@ const Carousel = () => {
             next = projects.length - 1;
         }
 
-        currentRef.current.className = 'w-full flex md:flex-col md:w-1/2 bg-teal-400 p-10 mx-auto opacity-50 -z-10 scale-90';
-        prevRef.current.className = 'w-full absolute scale-100 opacity-100 z-10 top-0 left-0 flex md:flex-col md:w-1/2 bg-teal-400 h-full p-10 scale-100 mx-auto z-10';
+        currentRef.current.className = 'w-full flex flex-col md:w-1/2 bg-teal-400 p-10 mx-auto opacity-50 -z-10 scale-90';
+        prevRef.current.className = 'w-full absolute scale-100 opacity-100 z-10 top-0 left-0 flex flex-col md:w-1/2 bg-teal-400 h-full p-10 scale-[100%] mx-auto z-10';
 
-        currentRef.current.className = currentRef.current.className + 'transform duration-1000 opacity-50 scale-90 -z-10 translate-x-1/2';
-        nextRef.current.className = nextRef.current.className + 'transform duration-1000 opacity-100 scale-90 -z-10 -translate-x-full';
+        currentRef.current.className = currentRef.current.className + 'transform duration-1000 opacity-50 scale-[90%] -z-10 translate-x-1/2';
+        nextRef.current.className = nextRef.current.className + 'transform duration-1000 opacity-100 scale-[90%] -z-10 -translate-x-full';
         prevRef.current.className = prevRef.current.className + 'transform duration-1000 translate-x-1/2';
         
         setTimeout(() => {
@@ -119,19 +119,19 @@ const Carousel = () => {
             next = 0;
         }
 
-        currentRef.current.className = 'w-full flex md:flex-col md:w-1/2 bg-teal-400 p-10 mx-auto opacity-50 -z-10 scale-90';
-        nextRef.current.className = 'w-full absolute opacity-100 -z-10 scale-100  top-0 right-0 flex md:flex-col md:w-1/2 bg-teal-400 h-full p-10 mx-auto z-10';
+        currentRef.current.className = 'w-full flex flex-col md:w-1/2 bg-teal-400 p-10 mx-auto opacity-50 -z-10 scale-[90%]';
+        nextRef.current.className = 'w-full absolute opacity-100 -z-10 scale-100  top-0 right-0 flex flex-col md:w-1/2 bg-teal-400 h-full p-10 mx-auto z-10';
 
-        currentRef.current.className = currentRef.current.className + 'transform duration-1000 opacity-50 scale-90 -z-10 -translate-x-1/2';
-        nextRef.current.className = nextRef.current.className + 'transform duration-1000 opacity-100 scale-100 z-10 -translate-x-1/2';
-        prevRef.current.className = prevRef.current.className + 'transform duration-1000 opacity-50 scale-90 -z-10 translate-x-full';
+        currentRef.current.className = currentRef.current.className + 'transform duration-1000 opacity-50 scale-[90%] -z-10 -translate-x-1/2';
+        nextRef.current.className = nextRef.current.className + 'transform duration-1000 opacity-100 scale-[100%] z-10 -translate-x-1/2';
+        prevRef.current.className = prevRef.current.className + 'transform duration-1000 opacity-50 scale-[90%] -z-10 translate-x-full';
 
         setTimeout(() => {
 
             setPrevIndex(prev);
             setCurrentIndex(current);
             setNextIndex(next);
-        }, 1000);
+        }, 700);
     }
 
   return (
@@ -145,11 +145,11 @@ const Carousel = () => {
                 <img src={dashboardImg} alt='Project'/>
             </div>
             <div className='mb-7'>
-                <h2 className="text-5xl mb-3">{projects[prevIndex].title}</h2>
-                <p className='text-md'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, soluta debitis! Saepe hic dolores est, earum fugiat id sed sequi porro! Tenetur alias dolor fugit, vitae exercitationem quos porro repudiandae.</p>
+                <h2 className="text-2xl md:text-5xl mb-3">{projects[prevIndex].title}</h2>
+                <p className='text-sm md:text-md'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, soluta debitis! Saepe hic dolores est, earum fugiat id sed sequi porro! Tenetur alias dolor fugit, vitae exercitationem quos porro repudiandae.</p>
             </div>
             <div>
-                <button className='p-2 border rounded-lg bg-white mr-5 ml-7'>
+                <button className='p-2 border rounded-lg bg-white mr-5 md:ml-7'>
                     Website
                 </button>
                 <button className='p-2 border border-gray-500 rounded-lg bg-gray-500'>
@@ -162,11 +162,11 @@ const Carousel = () => {
                 <img src={dashboardImg} alt='Project'/>
             </div>
             <div className='mb-7'>
-                <h2 className="text-5xl mb-3">{projects[currentIndex].title}</h2>
-                <p className='text-md'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, soluta debitis! Saepe hic dolores est, earum fugiat id sed sequi porro! Tenetur alias dolor fugit, vitae exercitationem quos porro repudiandae.</p>
+                <h2 className="text-2xl md:text-5xl mb-3">{projects[currentIndex].title}</h2>
+                <p className='text-sm md:text-md'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, soluta debitis! Saepe hic dolores est, earum fugiat id sed sequi porro! Tenetur alias dolor fugit, vitae exercitationem quos porro repudiandae.</p>
             </div>
             <div>
-                <button className='p-2 border rounded-lg bg-white mr-5 ml-7'>
+                <button className='p-2 border rounded-lg bg-white mr-5 md:ml-7'>
                     Website
                 </button>
                 <button className='p-2 border border-gray-500 rounded-lg bg-gray-500'>
@@ -179,11 +179,11 @@ const Carousel = () => {
                 <img src={dashboardImg} alt='Project'/>
             </div>
             <div className='mb-7'>
-                <h2 className="text-5xl mb-3">{projects[nextIndex].title}</h2>
-                <p className='text-md'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, soluta debitis! Saepe hic dolores est, earum fugiat id sed sequi porro! Tenetur alias dolor fugit, vitae exercitationem quos porro repudiandae.</p>
+                <h2 className="text-2xl md:text-5xl mb-3">{projects[nextIndex].title}</h2>
+                <p className='text-sm md:text-md'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, soluta debitis! Saepe hic dolores est, earum fugiat id sed sequi porro! Tenetur alias dolor fugit, vitae exercitationem quos porro repudiandae.</p>
             </div>
             <div>
-                <button className='p-2 border rounded-lg bg-white mr-5 ml-7'>
+                <button className='p-2 border rounded-lg bg-white mr-5 md:ml-7'>
                     Website
                 </button>
                 <button className='p-2 border border-gray-500 rounded-lg bg-gray-500'>

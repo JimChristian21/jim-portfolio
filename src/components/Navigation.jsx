@@ -8,7 +8,6 @@ const Navigation = () => {
         <div className="w-full h-14 flex justify-center items-center text-2xl my-4 sticky top-0 z-20">
             <a href="#Home" className={classes}>Home</a>
             <a href="#Projects" className={classes}>Projects</a>
-            <a href="#AboutMe" className={classes}>About Me</a>
             <a href="#Contacts" className={classes}>Contacts</a>
         </div>
     );
