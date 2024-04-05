@@ -18,7 +18,7 @@ const Carousel = () => {
     const nextRef = useRef(null);
 
     const prevInitialClass = 'w-full absolute opacity-50 -z-10 scale-[90%]  top-0 left-0 flex flex-col md:w-1/2 bg-teal-400 h-full p-10 mx-auto';
-    const currentInitialClass = 'w-full flex flex-col md:w-1/2 bg-teal-400 p-10 mx-auto h-[850px]';
+    const currentInitialClass = 'w-full flex flex-col md:w-1/2 bg-teal-400 p-10 mx-auto';
     const nextInitialClass = 'w-full absolute opacity-50 -z-10 scale-[90%]  top-0 right-0 flex flex-col md:w-1/2 bg-teal-400 h-full p-10 mx-auto';
 
     useEffect(() => {
@@ -40,14 +40,14 @@ const Carousel = () => {
         },
         {
             title: 'RoboFriends',
-            description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, doloremque obcaecati dolore vel quos totam repellendus voluptatum adipisci, in delectus dolores officia tempora impedit repellat enim velit deleniti veniam a.',
+            description: 'List of Robots that is searchable. Responsive search where every input search the name of the robot.',
             image: [
                 robofriends1,
                 robofriends2,
-                robofriends3
+                robofriends1
             ],
             links: {
-                website: '',
+                website: 'https://jimchristian21.github.io/robofriends',
                 github: 'https://github.com/JimChristian21/robofriends',
             }
         },
@@ -153,15 +153,15 @@ const Carousel = () => {
             </div>
             <div className='mb-7'>
                 <h2 className="text-2xl md:text-5xl mb-3">{projects[prevIndex].title}</h2>
-                <p className='text-sm md:text-md'>TEST</p>
+                <p className='text-sm md:text-md'>{projects[prevIndex].description}</p>
             </div>
             <div>
-                <button className='p-2 border rounded-lg bg-white mr-5 md:ml-7'>
+                <a href={projects[prevIndex].links.website} className='p-2 border rounded-lg bg-white mr-5' target="_blank">
                     Website
-                </button>
-                <button className='p-2 border border-gray-500 rounded-lg bg-gray-500'>
+                </a>
+                <a href={projects[prevIndex].links.github} className='p-2 border border-gray-500 rounded-lg bg-gray-500' target="_blank">
                     GitHub
-                </button>
+                </a>
             </div>
         </div>
         <div ref={currentRef} className={currentInitialClass}>
@@ -170,15 +170,15 @@ const Carousel = () => {
             </div>
             <div className='mb-7'>
                 <h2 className="text-2xl md:text-5xl mb-3">{projects[currentIndex].title}</h2>
-                <p className='text-sm md:text-md'>TEST</p>
+                <p className='text-sm md:text-md'>{projects[currentIndex].description}</p>
             </div>
             <div>
-                <button className='p-2 border rounded-lg bg-white mr-5 md:ml-7'>
+                <a href={projects[currentIndex].links.website} className='p-2 border rounded-lg bg-white mr-5' target="_blank">
                     Website
-                </button>
-                <button className='p-2 border border-gray-500 rounded-lg bg-gray-500'>
+                </a>
+                 <a href={projects[currentIndex].links.github} className='p-2 border border-gray-500 rounded-lg bg-gray-500' target="_blank">
                     GitHub
-                </button>
+                </a>
             </div>
         </div>
         <div ref={nextRef} className={nextInitialClass}>
@@ -187,15 +187,15 @@ const Carousel = () => {
             </div>
             <div className='mb-7'>
                 <h2 className="text-2xl md:text-5xl mb-3">{projects[nextIndex].title}</h2>
-                <p className='text-sm md:text-md'>TEST</p>
+                <p className='text-sm md:text-md'>{projects[nextIndex].description}</p>
             </div>
             <div>
-                <button className='p-2 border rounded-lg bg-white mr-5 md:ml-7'>
+                <a href={projects[nextIndex].links.website} className='p-2 border rounded-lg bg-white mr-5' target="_blank">
                     Website
-                </button>
-                <button className='p-2 border border-gray-500 rounded-lg bg-gray-500'>
+                </a>
+                <a href={projects[nextIndex].links.github} className='p-2 border border-gray-500 rounded-lg bg-gray-500' target="_blank">
                     GitHub
-                </button>
+                </a>
             </div>
         </div>
         <button onClick={handleNext} className='text-white absolute top-1/2 right-[30px] z-20'>
