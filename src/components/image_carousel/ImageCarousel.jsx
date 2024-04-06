@@ -60,12 +60,12 @@ const ImageCarousel = ({ images }) => {
 
     return (
         <div className="flex relative">
-            <button onClick={handlePrevious} className='text-white absolute h-[25rem] right-[100%]'>
-                <span className='text-gray-500 text-2xl hover:text-4xl mx-1'>{'<'}</span>
+            <button onClick={handlePrevious} className='text-white absolute h-[25rem] bg-gray-700 hover:bg-gray-600 right-[100%]'>
+                <span className='text-gray-300 text-2xl mx-1'>{'<'}</span>
             </button>
             <img src={images[currentIndex]} alt='Project'/>
-            <button onClick={handleNext} className='text-white absolute h-[25rem] left-[100%]'>
-                <span className='text-gray-500 text-2xl hover:text-4xl mx-1'>{'>'}</span>
+            <button onClick={handleNext} className='text-white absolute h-[25rem] bg-gray-700 hover:bg-gray-600 left-[100%]'>
+                <span className='text-gray-300 text-2xl mx-1'>{'>'}</span>
             </button>
         </div>
     );
