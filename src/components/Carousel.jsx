@@ -12,6 +12,9 @@ import mujerbella7 from '../images/mujer_bella/mujer_bella7.png';
 import mujerbella8 from '../images/mujer_bella/mujer_bella8.png';
 import mujerbella9 from '../images/mujer_bella/mujer_bella9.png';
 import mujerbella10 from '../images/mujer_bella/mujer_bella10.png';
+import nike_clone1 from '../images/nike_clone/nike_clone1.png';
+import nike_clone2 from '../images/nike_clone/nike_clone2.png';
+import nike_clone3 from '../images/nike_clone/nike_clone3.png';
 import CarouselCard from './CarouselCard';
 import { 
     FaCircleChevronRight,
@@ -76,18 +79,21 @@ const Carousel = () => {
         },
         {
             id: 3,
-            title: 'Project 3',
-            description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, doloremque obcaecati dolore vel quos totam repellendus voluptatum adipisci, in delectus dolores officia tempora impedit repellat enim velit deleniti veniam a.',
+            title: 'Nike Store Clone',
+            description: 'Created with the power of Shopify Store.',
+            description2: 'This is a nike clone store.',
+            description3: 'Visit sample link with the password "testdev"',
             images: [
-                robofriends1,
-                robofriends2,
-                robofriends1
+                nike_clone1,
+                nike_clone2,
+                nike_clone3
             ],
             links: {
-                website: '',
+                website: 'https://nike-clone-store.myshopify.com/',
                 github: '',
             }
-        }
+        },
+        
     ];
 
     const handlePrevious = () => {
