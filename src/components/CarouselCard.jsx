@@ -1,12 +1,12 @@
 import React, { forwardRef } from 'react';
-import dashboardImg from '../images/dashboard.jpg';
+import ImageCarousel from './image_carousel/ImageCarousel';
 
 const CarouselCard = forwardRef(({ style, item}, ref) => {
 
     return (
         <div ref={ref} className={style}>
             <div className='mb-5'>
-                <img src={dashboardImg} alt='Project'/>
+                <ImageCarousel images={item.images}/>
             </div>
             <div className='mb-7'>
                 <h2 className="text-2xl md:text-5xl mb-3">{item.title}</h2>

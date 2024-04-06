@@ -33,7 +33,11 @@ const Carousel = () => {
         {
             title: 'Project 1',
             description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, doloremque obcaecati dolore vel quos totam repellendus voluptatum adipisci, in delectus dolores officia tempora impedit repellat enim velit deleniti veniam a.',
-            image: dashboardImg,
+            images: [
+                robofriends1,
+                robofriends2,
+                robofriends1
+            ],
             links: {
                 website: '',
                 github: '',
@@ -42,7 +46,7 @@ const Carousel = () => {
         {
             title: 'RoboFriends',
             description: 'List of Robots that is searchable. Responsive search where every input search the name of the robot.',
-            image: [
+            images: [
                 robofriends1,
                 robofriends2,
                 robofriends1
@@ -55,7 +59,11 @@ const Carousel = () => {
         {
             title: 'Project 3',
             description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, doloremque obcaecati dolore vel quos totam repellendus voluptatum adipisci, in delectus dolores officia tempora impedit repellat enim velit deleniti veniam a.',
-            image: dashboardImg,
+            images: [
+                robofriends1,
+                robofriends2,
+                robofriends1
+            ],
             links: {
                 website: '',
                 github: '',
