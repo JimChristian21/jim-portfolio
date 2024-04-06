@@ -3,6 +3,7 @@ import dashboardImg from '../images/dashboard.jpg';
 import robofriends1 from '../images/robofriends1.png';
 import robofriends2 from '../images/robofriends2.png';
 import robofriends3 from '../images/robofriends3.png';
+import CarouselCard from './CarouselCard';
 import { 
     FaCircleChevronRight,
     FaCircleChevronLeft
@@ -147,57 +148,9 @@ const Carousel = () => {
         <button onClick={handlePrevious} className='text-white absolute top-1/2 left-[30px] z-20'>
             <FaCircleChevronLeft className='text-4xl bg-black drop-shadow-lg rounded-full text-gray-500 hover:text-gray-500 hover:transform hover:duration-500 hover:scale-[1.1] hover:bg-gray-900'/>
         </button>
-        <div ref={prevRef} className={prevInitialClass}>
-            <div className='mb-5'>
-                <img src={dashboardImg} alt='Project'/>
-            </div>
-            <div className='mb-7'>
-                <h2 className="text-2xl md:text-5xl mb-3">{projects[prevIndex].title}</h2>
-                <p className='text-sm md:text-md'>{projects[prevIndex].description}</p>
-            </div>
-            <div>
-                <a href={projects[prevIndex].links.website} className='p-2 border rounded-lg bg-white mr-5' target="_blank">
-                    Website
-                </a>
-                <a href={projects[prevIndex].links.github} className='p-2 border border-gray-500 rounded-lg bg-gray-500' target="_blank">
-                    GitHub
-                </a>
-            </div>
-        </div>
-        <div ref={currentRef} className={currentInitialClass}>
-            <div className='mb-5'>
-                <img src={dashboardImg} alt='main'/>
-            </div>
-            <div className='mb-7'>
-                <h2 className="text-2xl md:text-5xl mb-3">{projects[currentIndex].title}</h2>
-                <p className='text-sm md:text-md'>{projects[currentIndex].description}</p>
-            </div>
-            <div>
-                <a href={projects[currentIndex].links.website} className='p-2 border rounded-lg bg-white mr-5' target="_blank">
-                    Website
-                </a>
-                 <a href={projects[currentIndex].links.github} className='p-2 border border-gray-500 rounded-lg bg-gray-500' target="_blank">
-                    GitHub
-                </a>
-            </div>
-        </div>
-        <div ref={nextRef} className={nextInitialClass}>
-            <div className='mb-5'>
-                <img src={dashboardImg} alt='Project'/>
-            </div>
-            <div className='mb-7'>
-                <h2 className="text-2xl md:text-5xl mb-3">{projects[nextIndex].title}</h2>
-                <p className='text-sm md:text-md'>{projects[nextIndex].description}</p>
-            </div>
-            <div>
-                <a href={projects[nextIndex].links.website} className='p-2 border rounded-lg bg-white mr-5' target="_blank">
-                    Website
-                </a>
-                <a href={projects[nextIndex].links.github} className='p-2 border border-gray-500 rounded-lg bg-gray-500' target="_blank">
-                    GitHub
-                </a>
-            </div>
-        </div>
+        <CarouselCard ref={prevRef} style={prevInitialClass} item={projects[prevIndex]}/>
+        <CarouselCard ref={currentRef} style={currentInitialClass} item={projects[currentIndex]}/>
+        <CarouselCard ref={nextRef} style={nextInitialClass} item={projects[nextIndex]}/>
         <button onClick={handleNext} className='text-white absolute top-1/2 right-[30px] z-20'>
             <FaCircleChevronRight className='text-4xl bg-black drop-shadow-lg rounded-full text-gray-500 hover:text-gray-500 hover:transform hover:duration-500 hover:scale-[1.1] hover:bg-gray-900'/>
         </button>
