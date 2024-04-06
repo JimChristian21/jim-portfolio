@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/jim-portfolio/static/css/main.f680ec9a.css",
+    "main.js": "/jim-portfolio/static/js/main.bb78ca77.js",
+    "static/js/787.1ed0c42c.chunk.js": "/jim-portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/nike_clone1.png": "/jim-portfolio/static/media/nike_clone1.f30b0355e8428b369d73.png",
+    "static/media/profile.png": "/jim-portfolio/static/media/profile.a92d115bbb3211dd92a4.png",
+    "static/media/mujer_bella1.png": "/jim-portfolio/static/media/mujer_bella1.d4273a14b330d2ff62de.png",
+    "static/media/nike_clone2.png": "/jim-portfolio/static/media/nike_clone2.d82be913272f6579819d.png",
+    "static/media/address.png": "/jim-portfolio/static/media/address.8436beba0a8484a5b9cf.png",
+    "static/media/robofriends2.png": "/jim-portfolio/static/media/robofriends2.9d5abecb0a077f55b92a.png",
+    "static/media/robofriends1.png": "/jim-portfolio/static/media/robofriends1.78ea8bb77774b035fd58.png",
+    "static/media/robofriends3.png": "/jim-portfolio/static/media/robofriends3.e79e1762b53445e0e1c0.png",
+    "static/media/nike_clone3.png": "/jim-portfolio/static/media/nike_clone3.0b5398688f81e1a69277.png",
+    "static/media/dev3.png": "/jim-portfolio/static/media/dev3.ae6ce8a7edbd97eb21a1.png",
+    "static/media/dev4.png": "/jim-portfolio/static/media/dev4.f69e253a750aaa5e81c7.png",
+    "static/media/dashboard.jpg": "/jim-portfolio/static/media/dashboard.a15e24d3e9d039ee24f4.jpg",
+    "static/media/dev2.png": "/jim-portfolio/static/media/dev2.1e625de85c85b4040777.png",
+    "static/media/dev1.png": "/jim-portfolio/static/media/dev1.e5b74e63de6a71c37955.png",
+    "static/media/mujer_bella2.png": "/jim-portfolio/static/media/mujer_bella2.354e40830c5f4464373d.png",
+    "static/media/mujer_bella8.png": "/jim-portfolio/static/media/mujer_bella8.490076799cda18299aec.png",
+    "static/media/mujer_bella5.png": "/jim-portfolio/static/media/mujer_bella5.177718f18fd1e0fed61a.png",
+    "static/media/mujer_bella9.png": "/jim-portfolio/static/media/mujer_bella9.920da7ede707b81f09eb.png",
+    "static/media/mujer_bella7.png": "/jim-portfolio/static/media/mujer_bella7.28e0b6042d3b11570c41.png",
+    "static/media/mujer_bella6.png": "/jim-portfolio/static/media/mujer_bella6.c5f18c44c594b0581c7e.png",
+    "static/media/dev5.png": "/jim-portfolio/static/media/dev5.aefe2badd7133abae82b.png",
+    "static/media/mujer_bella4.png": "/jim-portfolio/static/media/mujer_bella4.0b68426e312c6ee77d26.png",
+    "static/media/mujer_bella3.png": "/jim-portfolio/static/media/mujer_bella3.742da8a5f12e381a4d41.png",
+    "static/media/mujer_bella10.png": "/jim-portfolio/static/media/mujer_bella10.cf64bf8a547c25182181.png",
+    "index.html": "/jim-portfolio/index.html",
+    "main.f680ec9a.css.map": "/jim-portfolio/static/css/main.f680ec9a.css.map",
+    "main.bb78ca77.js.map": "/jim-portfolio/static/js/main.bb78ca77.js.map",
+    "787.1ed0c42c.chunk.js.map": "/jim-portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f680ec9a.css",
+    "static/js/main.bb78ca77.js"
+  ]
+}
