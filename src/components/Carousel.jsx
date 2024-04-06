@@ -15,6 +15,11 @@ import mujerbella10 from '../images/mujer_bella/mujer_bella10.png';
 import nike_clone1 from '../images/nike_clone/nike_clone1.png';
 import nike_clone2 from '../images/nike_clone/nike_clone2.png';
 import nike_clone3 from '../images/nike_clone/nike_clone3.png';
+import dev1 from '../images/shopify_store_dev/dev1.png';
+import dev2 from '../images/shopify_store_dev/dev2.png';
+import dev3 from '../images/shopify_store_dev/dev3.png';
+import dev4 from '../images/shopify_store_dev/dev4.png';
+import dev5 from '../images/shopify_store_dev/dev5.png';
 import CarouselCard from './CarouselCard';
 import { 
     FaCircleChevronRight,
@@ -93,7 +98,23 @@ const Carousel = () => {
                 github: '',
             }
         },
-        
+        {
+            id: 4,
+            title: 'Shopify Sample Store',
+            description: 'Shopify Store sample setup',
+            description2: 'Visit sample link with the password "testdev"',
+            images: [
+                dev1,
+                dev2,
+                dev3,
+                dev4,
+                dev5,
+            ],
+            links: {
+                website: 'https://jim-test-dev.myshopify.com/',
+                github: '',
+            }
+        },
     ];
 
     const handlePrevious = () => {
